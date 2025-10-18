@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f9f4;
+  color: #333;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  color: #2e7d32;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #00695c;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
