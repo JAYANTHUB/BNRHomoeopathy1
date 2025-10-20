@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B.N.R. Homeopathy | Book Appointment</title>
+  <meta name="description" content="Compassionate, holistic homeopathic care — consultations for chronic and acute concerns." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta property="og:title" content="B.N.R. Homeopathy" />
+  <meta property="og:description" content="Compassionate, holistic homeopathic care — consultations for chronic and acute concerns." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.example.com" />
+  <meta property="og:image" content="https://www.example.com/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="B.N.R. Homeopathy home">
+      <img src="assets/img/logo.svg" alt="B.N.R. Homeopathy logo" width="40" height="40" />
+      <span>B.N.R. Homeopathy</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">☰</button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="appointment.html" class="btn btn-primary">Book</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page container content">
+  <h1>Book an appointment</h1>
+  <p class="lead">Fill out the form and we’ll confirm your slot by phone or email.</p>
+  <form id="appointment-form" class="form" action="#" method="POST">
+    <div class="form-grid">
+      <label>Full name *<input name="name" required placeholder="Your full name" /></label>
+      <label>Mobile number *<input name="phone" type="tel" required placeholder="+91" /></label>
+      <label>Email<input name="email" type="email" placeholder="you@example.com" /></label>
+      <label>Preferred date<input name="date" type="date" /></label>
+      <label>Preferred time<input name="time" type="time" /></label>
+      <label>Visit type<select name="type"><option>First consultation</option><option>Follow-up</option><option>Tele-consult</option></select></label>
+      <label class="full">Briefly describe your concern<textarea name="message" rows="4" placeholder="(Optional)"></textarea></label>
+      <label class="check full"><input type="checkbox" required /> I agree to be contacted for scheduling. <a href="privacy.html">Privacy</a></label>
+    </div>
+    <button class="btn btn-primary" type="submit">Request appointment</button>
+    <p class="tinyprint">For emergencies, please call your local emergency number or visit the nearest hospital.</p>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container grid footer-grid">
+    <div>
+      <h3>B.N.R. Homeopathy</h3>
+      <p>Compassionate, holistic homeopathic care — consultations for chronic and acute concerns.</p>
+      <p><strong>Phone:</strong> <a href="tel:+91-XXXXXXXXXX">+91-XXXXXXXXXX</a><br/>
+         <strong>Email:</strong> <a href="mailto:care@bnrhomeopathy.example">care@bnrhomeopathy.example</a></p>
+      <p><strong>Address:</strong> Your clinic address, Area, Mumbai, Maharashtra 400000</p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul class="hours">
+        <li><span>Mon-Fri</span><span>10:00–13:00, 17:00–20:00</span></li><li><span>Sat</span><span>10:00–14:00</span></li><li><span>Sun</span><span>Closed</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul class="links">
+        <li><a href="appointment.html">Book appointment</a></li>
+        <li><a href="services.html">Conditions we see</a></li>
+        <li><a href="about.html">Our approach</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container tinyprint">
+    <p>© <span id="year"></span> B.N.R. Homeopathy. All rights reserved. For medical emergencies, call your local emergency number or visit the nearest hospital.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
