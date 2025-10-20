@@ -1,35 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BNR Homoeopathy</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B.N.R. Homeopathy | Home</title>
+  <meta name="description" content="Compassionate, holistic homeopathic care — consultations for chronic and acute concerns." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta property="og:title" content="B.N.R. Homeopathy" />
+  <meta property="og:description" content="Compassionate, holistic homeopathic care — consultations for chronic and acute concerns." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bnrhomoeopathy.com" />
+  <meta property="og:image" content="https://www.bnrhomoeopathy.com/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
+
 <body>
-  <header>
-    <h1>BNR Homoeopathy</h1>
-    <p>Dr. Kishor Kumar – Trusted Homoeopathic Care</p>
-  </header>
 
-  <main>
-    <section class="about">
-      <h2>About the Clinic</h2>
-      <p>Welcome to BNR Homoeopathy, where holistic healing meets compassionate care. Led by Dr. Kishor Kumar, we specialize in personalized homoeopathic treatments for a wide range of conditions.</p>
-    </section>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="B.N.R. Homeopathy home">
+      <img src="assets/img/logo.svg" alt="B.N.R. Homeopathy logo" width="40" height="40" />
+      <span>B.N.R. Homeopathy</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">☰</button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="appointment.html" class="btn btn-primary">Book</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
 
-    <section class="contact">
-      <h2>Contact Us</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:bnrhomoeopathy@gmai.com">bnrhomoeopathy@gmail.com</a></li>
-        <li><strong>Phone:</strong> <a href="tel:+917638817158">+91 70043 70672</a></li>
-        <li><strong>Website:</strong> <a href="www.bnrhomoeopathy.com">www.bnrhomoeopathy.com</a></li>
+<main>
+  <section class="hero">
+    <div class="container grid two-col">
+      <div>
+        <h1>Holistic care, thoughtfully delivered</h1>
+        <p class="lead">Personalized homeopathic consultations for individuals and families. Calm, careful, and confidential.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="appointment.html">Book an appointment</a>
+          <a class="btn" href="tel:+91-7004370672">Call now</a>
+        </div>
+        <ul class="badges">
+          <li>Experienced practitioners</li>
+          <li>Patient-first approach</li>
+          <li>Easy follow-ups</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="assets/img/hero-illustration.svg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="container">
+      <ul class="strip-list">
+        <li>Chronic Care</li>
+        <li>Acute Support</li>
+        <li>Pediatric & Senior Care</li>
+        <li>Lifestyle Guidance</li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 BNR Homoeopathy. All rights reserved.</p>
-  </footer>
+  <section class="services">
+    <div class="container">
+      <h2>What we help with</h2>
+      <div class="grid three-col cards">
+        <article class="card"><h3>Personalized consultations</h3><p>In-depth case-taking to understand your health history and goals.</p></article>
+        <article class="card"><h3>Chronic conditions</h3><p>Support for allergies, skin concerns, migraines, digestive issues, and more.</p></article>
+        <article class="card"><h3>Acute concerns</h3><p>Short-term support for common colds, minor injuries, and seasonal complaints.</p></article>
+        <article class="card"><h3>Pediatric & senior care</h3><p>Gentle, age-appropriate guidance for children and older adults.</p></article>
+        <article class="card"><h3>Follow-ups & continuity</h3><p>Regular reviews to adjust your plan as you progress.</p></article>
+        <article class="card"><h3>Lifestyle guidance</h3><p>Simple, sustainable habits that complement your care.</p></article>
+      </div>
+      <p class="note">Note: Homeopathy is a complementary system. For emergencies or serious symptoms, seek immediate medical care.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>What patients say</h2>
+      <div class="grid three-col cards">
+        <blockquote class="card">“Calm, attentive, and thorough.”<cite>— A. P.</cite></blockquote>
+        <blockquote class="card">“Clear explanations and consistent follow-ups.”<cite>— R. K.</cite></blockquote>
+        <blockquote class="card">“Felt truly heard during my consultation.”<cite>— S. D.</cite></blockquote>
+      </div>
+      <p class="tinyprint">Individual experiences vary.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to get started?</h2>
+        <p>Book your first consultation in a minute.</p>
+        <a class="btn btn-primary" href="appointment.html">Book now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container grid footer-grid">
+    <div>
+      <h3>B.N.R. Homeopathy</h3>
+      <p>Compassionate, holistic homeopathic care — consultations for chronic and acute concerns.</p>
+      <p><strong>Phone:</strong> <a href="tel:+91-7004370672">+91-7004370672</a><br/>
+         <strong>Email:</strong> <a href="mailto:bnrhomeopathy@gmail.com">bnrhomeopathy@gmail.com</a></p>
+      <p><strong>Address:</strong> Kasiyadih Chadhewa,Giridih, Jharkhand 825322</p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul class="hours">
+        <li><span>Mon-Fri</span><span>10:00–13:00, 17:00–20:00</span></li><li><span>Sat</span><span>10:00–14:00</span></li><li><span>Sun</span><span>Closed</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul class="links">
+        <li><a href="appointment.html">Book appointment</a></li>
+        <li><a href="services.html">Conditions we see</a></li>
+        <li><a href="about.html">Our approach</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container tinyprint">
+    <p>© <span id="year"></span> B.N.R. Homeopathy. All rights reserved. For medical emergencies, call your local emergency number or visit the nearest hospital.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
+
