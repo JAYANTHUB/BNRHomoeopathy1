@@ -68,7 +68,7 @@ a{color:var(--brand);text-decoration:none}
 .btn-primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b0b0c;border:none}
 .btn-primary:hover{filter:brightness(1.05)}
 .badges li{background:#fff8db;border:1px solid #f0e1a8;color:#7a5c07}
-.site-footer{background:#ffffff;color:#222;border-top:1px solid #eee}
+/*.site-footer{background:#ffffff;color:#222;border-top:1px solid #eee} */
 .site-footer a{color:#8a6c08}
 .hours li{border-bottom:1px dashed #e5e5e5}
 .form input,.form select,.form textarea{background:#fff;color:#0a0a0a;border:1px solid #d8cfa9}
