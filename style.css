@@ -245,7 +245,7 @@ body {
 /* Image container for consistent sizing */
 .doctor-image-container {
     width: 100%;
-    height: 600px; /* Fixed height for doctor images */
+    height: auto; /* Fixed height for doctor images */
     overflow: hidden;
     position: relative;
     /* Ensure only top corners are rounded */
@@ -255,7 +255,7 @@ body {
 
 .doctor-image-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover; /* Cover the area, cropping if necessary */
     object-position: top center; /* Focus on the top part of the person */
     display: block;
