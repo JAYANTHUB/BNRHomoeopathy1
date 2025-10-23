@@ -1,147 +1,984 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>B.N.R. Homeopathy | Home</title>
-  <meta name="description" content="Compassionate, holistic homeopathic care — consultations for chronic and acute concerns." />
-  <meta name="robots" content="index,follow" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <meta property="og:title" content="B.N.R. Homeopathy" />
-  <meta property="og:description" content="Compassionate, holistic homeopathic care — consultations for chronic and acute concerns." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.bnrhomoeopathy.com" />
-  <meta property="og:image" content="https://www.bnrhomoeopathy.com/assets/img/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNR HOMOEOPATHY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
+<!-- 
+    <div class="alert alert-warning text-center m-0 py-1 small" role="alert">
+       <i class="bi bi-exclamation-triangle-fill"></i> NOTICE: IN CASE OF CANCELLATION OF ONLINE BOOKING THERE IS NO REFUND
+    </div>
+-->
+<div class="row">
+                        
+                        <div class="container social-links justify-content-center d-flex social-media">
+                            <a href="https://www.facebook.com/share/17Ct2GyaXa/" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/KishorKanta?t=ZMNuTuC8bD9zYBwl1DTNGA&s=08" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-x"></i></a>
+                            <a href="https://www.instagram.com/bnrhomoeopathy?utm_source=qr&igsh=cThsOG1xMnBqY3Rl" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-instagram"></i></a>
+							<a href="https://youtube.com/@kanta674?si=M2ICYkwIA7CZNFPp" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center"><i class="bi bi-youtube"></i></a>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="logo" href="index.html" aria-label="B.N.R. HOMOEOPATHY home">
-      <img src="assets/img/logo.svg" alt="B.N.R. Homeopathy logo" width="40" height="40" />
-      <span>B.N.R. HOMOEOPATHY</span>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">☰</button>
-    <nav id="primary-nav" class="primary-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="doctors.html">Doctors</a>
-      <a href="appointment.html" class="btn btn-primary">Book</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="container grid two-col">
-      <div>
-        <h1>Holistic care, thoughtfully delivered</h1>
-        <p class="lead">Personalized homeopathic consultations for individuals and families. Calm, careful, and confidential.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="appointment.html">Book an appointment</a>
-          <a class="btn" href="tel:+91-7004370672">Call now</a>
+                        </div>
+                    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo/logo.png" alt="BNR HOMOEOPATHY Logo" class="me-3" style="height: 60px;"> 
+				<div class="d-flex flex-column lh-3">
+                    <span class="fw-bold text-dark">B.N.R. HOMOEOPATHY</span>
+                    <small class="text-secondary" style="font-size: 0.75rem;">Serving towards the humanity</small>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                            <li><a class="dropdown-item" href="#about-us">Our Story</a></li>
+                            <li><a class="dropdown-item" href="#doctors">Doctors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdownServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                       <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+                            <li><a class="dropdown-item" href="#services">Orthopedic</a></li>
+                            <li><a class="dropdown-item" href="#services">Research</a></li>
+                        </ul>-->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Online Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                </ul>
+                
+                <div class="d-lg-flex">
+                    <a href="#" class="btn btn-outline-danger btn-sm appointment-btn" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                        <i class="bi bi-calendar-check-fill me-1"></i> Appointment
+                    </a>
+                </div>
+            </div>
         </div>
-        <ul class="badges">
-          <li>Experienced practitioners</li>
-          <li>Patient-first approach</li>
-          <li>Easy follow-ups</li>
-        </ul>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <img src="assets/img/hero-illustration.svg" alt="" />
-      </div>
-    </div>
-  </section>
+    </nav>
+    
 
-  <section class="strip">
-    <div class="container">
-      <ul class="strip-list">
-        <li>Chronic Care</li>
-        <li>Acute Support</li>
-        <li>Pediatric & Senior Care</li>
-        <li>Lifestyle Guidance</li>
-      </ul>
-    </div>
-  </section>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-  <section class="services">
-    <div class="container">
-      <h2>What we help with</h2>
-      <div class="grid three-col cards">
-        <article class="card"><h3>Personalized consultations</h3><p>In-depth case-taking to understand your health history and goals.</p></article>
-        <article class="card"><h3>Chronic conditions</h3><p>Support for allergies, skin concerns, migraines, digestive issues, and more.</p></article>
-        <article class="card"><h3>Acute concerns</h3><p>Short-term support for common colds, minor injuries, and seasonal complaints.</p></article>
-        <article class="card"><h3>Pediatric & senior care</h3><p>Gentle, age-appropriate guidance for children and older adults.</p></article>
-        <article class="card"><h3>Follow-ups & continuity</h3><p>Regular reviews to adjust your plan as you progress.</p></article>
-        <article class="card"><h3>Lifestyle guidance</h3><p>Simple, sustainable habits that complement your care.</p></article>
-      </div>
-      <p class="note">Note: Homeopathy is a complementary system. For emergencies or serious symptoms, seek immediate medical care.</p>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="container">
-      <h2>What patients say</h2>
-      <div class="grid three-col cards">
-        <blockquote class="card">“Calm, attentive, and thorough.”<cite>— A. P.</cite></blockquote>
-        <blockquote class="card">“Clear explanations and consistent follow-ups.”<cite>— R. K.</cite></blockquote>
-        <blockquote class="card">“Felt truly heard during my consultation.”<cite>— S. D.</cite></blockquote>
-      </div>
-      <p class="tinyprint">Individual experiences vary.</p>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="container">
-      <div class="cta-box">
-        <h2>Ready to get started?</h2>
-        <p>Book your first consultation in a minute.</p>
-        <a class="btn btn-primary" href="appointment.html">Book now</a>
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src="slider_images/1.webp" alt="Los Angeles" class="d-block" style="width:100%;height:500px;">
+      <div class="carousel-caption top-0 mt-4">
+		<p class="mt-5 fs-3 text-uppercase">Visit BNR HOMOEOPATHY Clinic</p>
+        <p class="display-6 fw-bolder text-capitalize">Chronic Conditions? Find Your Solution Here. HOMOEOPATHY You Can Trust.</p>
+		
+		<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#comingSoonModal">Book Appointment</button>
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container grid footer-grid">
-    <div>
-      <h3>B.N.R. Homeopathy</h3>
-      <p>Compassionate, holistic homeopathic care — consultations for chronic and acute concerns.</p>
-      <p><strong>Phone:</strong> <a href="tel:+91-7004370672">+91-7004370672</a><br/>
-         <strong>Email:</strong> <a href="mailto:bnrhomeopathy@gmail.com">bnrhomeopathy@gmail.com</a></p>
-      <p><strong>Address:</strong> Kasiyadih Chadhewa,Giridih, Jharkhand 825322</p>
+    <div class="carousel-item active c-item">
+      <img src="slider_images/2.png" alt="Los Angeles" class="d-block" style="width:100%;height:500px;">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-5 fs-3 text-uppercase">Visit BNR HOMOEOPATHY Clinic</p>
+        <p class="display-6 fw-bolder text-capitalize">Gentle Medicine. Powerful Results. Discover Your Path to Health.</p>
+		<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#comingSoonModal">Book Appointment</button>
+      </div>
     </div>
-    <div>
-      <h4>Hours</h4>
-      <ul class="hours">
-        <li><span>Mon-Fri</span><span>10:00–13:00, 17:00–20:00</span></li><li><span>Sat</span><span>10:00–14:00</span></li><li><span>Sun</span><span>Closed</span></li>
-      </ul>
+    <div class="carousel-item active c-item">
+      <img src="slider_images/3.jpeg" alt="Los Angeles" class="d-block" style="width:100%;height:500px;">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-5 fs-3 text-uppercase">Visit BNR Homoeopathy Clinic</p>
+        <p class="display-6 fw-bolder text-capitalize">Unlock Your Body's Natural Healing Power. Start Your Journey Today.</p>
+		<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#comingSoonModal">Book Appointment</button>
+      </div>
     </div>
-    <div>
-      <h4>Quick links</h4>
-      <ul class="links">
-        <li><a href="appointment.html">Book appointment</a></li>
-        <li><a href="services.html">Conditions we see</a></li>
-        <li><a href="about.html">Our approach</a></li>
-        <li><a href="faq.html">FAQs</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-      </ul>
+	<div class="carousel-item active c-item">
+      <img src="slider_images/4.jpg" alt="Los Angeles" class="d-block" style="width:100%;height:500px;">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-5 fs-3 text-uppercase">Visit BNR Homoeopathy Clinic</p>
+        <p class="display-6 fw-bolder text-capitalize">HOMOEOPATHY: Treating You, Not Just Your Disease.</p>
+		<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#comingSoonModal">Book Appointment</button>
+      </div>
+    </div>
+	<div class="carousel-item active c-item">
+      <img src="slider_images/5.jpg" alt="Los Angeles" class="d-block" style="width:100%;height:500px;">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-5 fs-3 text-uppercase">Visit BNR Homoeopathy Clinic</p>
+        <p class="display-6 fw-bolder text-capitalize">Specialists in Chronic Illness. Find Long-Term Relief, Naturally.</p>
+		<button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#comingSoonModal">Book Appointment</button>
+      </div>
     </div>
   </div>
-  <div class="container tinyprint">
-    <p>© <span id="year"></span> B.N.R. Homeopathy. All rights reserved. For medical emergencies, call your local emergency number or visit the nearest hospital.</p>
-  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<section class="container-fluid py-5 features-section" id="about-clinic">
+    <div class="row align-items-center">
+        
+        <div class="col-lg-6 col-md-12 p-5">
+            <h2 class="display-6 fw-bold mb-4 ortho-heading">
+                Best Homoeopathy Clinic <br>with extra care..
+            </h2>
+            <p class="lead text-secondary mb-5">
+				Welcome to BNR Homoeopathy, your destination for holistic health and truly personalized medical treatment. 
+				We're proud to be known as the Best Homoeopathy Clinic with extra care, a distinction earned through our unwavering commitment 
+				to each patient's well-being. Our approach goes beyond just treating symptoms; we take the time to understand your complete health profile,
+				lifestyle, and history to create a custom treatment plan. Experience compassionate care and effective, gentle remedies in a 
+				supportive environment where your health is our ultimate priority.
+				Book a consultation today to begin your journey to lasting wellness.
+            </p>
+            
+            <div class="d-flex align-items-center mb-5 contact-info">
+                <i class="bi bi-telephone-fill me-3 phone-icon"></i>
+                <div>
+                    <span class="d-block text-uppercase fw-bold small text-muted">CALL</span>
+                    <span class="fs-4 fw-bold text-dark">7004370672</span>
+                </div>
+            </div>
+            
+            <a href="#" class="btn btn-primary btn-lg booking-btn" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                Booking <i class="bi bi-chevron-right ms-2"></i>
+            </a>
+        </div>
+        
+        <div class="col-lg-6 col-md-12 position-relative d-flex justify-content-center align-items-center image-collage-container">
+            <div class="main-image-wrapper">
+                <img src="images/doctors/desk.webp" alt="Doctor consulting at desk" class="img-fluid rounded-3 shadow-lg main-image">
+            </div>
+
+            <div class="overlay-image top-right-image">
+                <img src="images/doctors/k1.jpg" alt="Close-up view of surgery" class="img-fluid rounded-3 shadow-sm">
+            </div>
+
+            <div class="overlay-image bottom-center-image">
+                <img src="images/doctors/medicine.jpg" alt="Doctor performing surgery" class="img-fluid rounded-3 shadow-lg bottom-image">
+                <div class="play-button-overlay">
+                    <a href="https://youtube.com/@kanta674?si=M2ICYkwIA7CZNFPp"><i class="bi bi-play-fill"></i></a>
+                </div>
+            </div>
+
+            </div>
+        
+    </div>
+</section>
+
+	<section class="services-section py-5" id="services">
+		<div class="container text-center">
+			
+			<div class="row g-4 justify-content-center">
+            <h2 class="display-8 fw-bold mb-4 loved-ones-heading">BNR HOMOEOPATHY CLINIC HELP IN</h2>
+            
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-stars"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Digestive Issues</h3>
+                        <p class="text-secondary small">
+                            Acidity, Gas, Bloating, IBS, Chronic Diarrhea/Constipation, Piles.
+                        </p>
+                    </div>
+                    
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d1.jpg" alt="Digestive Issues" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-activity"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Skin Diseases</h3>
+                        <p class="text-secondary small">
+                            Eczema, Psoriasis, Chronic Urticaria (Hives), Acne, Vitiligo, Warts.
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d2.jpg" alt="Complex Trauma Care" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">ENT Diseases</h3>
+                        <p class="text-secondary small">
+                            Chronic Sinusitis, Allergic Rhinitis, Recurrent Tonsillitis, Adenoids, Vertigo.
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d3.png" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Reproductive Diseases</h3>
+                        <p class="text-secondary small">
+                            PCOS, Menstrual Disorders (Pains, Irregularity), Uterine Fibroids, Male & Female Infertility (Supportive Care).
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d4.jpg" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Infection & Virus Diseases</h3>
+                        <p class="text-secondary small">
+                            Recurrent Colds/Flu, Urinary Tract Infections (UTIs), Fevers, Viral Warts, Mild Gastroenteritis.
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d5.jpg" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Lungs Diseases</h3>
+                        <p class="text-secondary small">
+                            Chronic Asthma, Allergic Bronchitis, Recurrent Chest Infections, Chronic Cough.
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d6.jpg" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Children Diseases</h3>
+                        <p class="text-secondary small">
+                            Teething Issues, Colic, Recurrent Ear Infections, Behavioral Disorders, Low Immunity.
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d7.jpg" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Bone Diseases</h3>
+                        <p class="text-secondary small">
+                            Arthritis (Osteoarthritis, Rheumatoid), Gout, Sciatica, Healing after Fractures/Trauma.
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d8.png" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Hair Diseases</h3>
+                        <p class="text-secondary small">
+                            Hair Loss (Alopecia Areata, Male/Female Pattern Baldness), Severe Dandruff, Scalp Infections
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d9.jpg" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Brain/Nerve Diseases</h3>
+                        <p class="text-secondary small">
+                            Migraines/Headaches, Insomnia, Anxiety, Depression, Supportive Care for Neurological conditions
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d10.png" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Heart Diseases</h3>
+                        <p class="text-secondary small">
+                            Supportive care for Hypertension, Palpitations, Post-Heart-Event Rehabilitation (complementary).
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d11.png" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            
+			<div class="col-lg-4 col-md-6">
+                <div class="service-card rounded-3 text-center">
+                    <div class="card-content p-4">
+                        <div class="service-icon-wrapper rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <i class="bi bi-person-bounding-box"></i> 
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Kidney Diseases</h3>
+                        <p class="text-secondary small">
+                            Kidney Stones (Recurrent), Chronic UTIs, Mild Renal Dysfunction (Complementary).
+                        </p>
+                    </div>
+                    <div class="card-image-bottom">
+                        <img src="home_page_images/d12.jpg" alt="Laminar Flow OT" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="loved-ones-section py-5 position-relative overflow-hidden">
+    <div class="background-dots dots-left"></div>
+    <div class="background-dots dots-right"></div>
+
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12 text-content pe-lg-5">
+                <h2 class="display-8 fw-bold mb-4 loved-ones-heading">We love your loved ones</h2>
+                <p class="lead text-secondary mb-4">
+                    BNR HOMOEOPATHY is experienced in complex Illness, Allergic illness treatment besides routine madicine.
+                </p>
+                <p class="lead text-secondary mb-5">
+                    World class facilities at your doorstep. To provide quality orthopedic care, implants, Operation Theater which is available in metro corporate hospitals at affordable rates.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="feature-box d-flex align-items-start p-3">
+                            <i class="bi bi-shield-check feature-icon me-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">100% Safe & Trusted</h4>
+                                <p class="small text-muted mb-0">BNR Homoeopathy Clinic, 100% safe and trusted for your health and wellness needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-box d-flex align-items-start p-3">
+                            <i class="bi bi-brain feature-icon me-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Specialist Surgery</h4>
+                                <p class="small text-muted mb-0">BNR Homoeopathy Clinic is your destination for expert specialist surgery and exceptional care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-box d-flex align-items-start p-3">
+                            <i class="bi bi-headset feature-icon me-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">24/7 take care staff</h4>
+                                <p class="small text-muted mb-0">Providing 24x7 care with a dedicated and compassionate staff.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-box d-flex align-items-start p-3">
+                            <i class="bi bi-capsule feature-icon me-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">Medicine service</h4>
+                                <p class="small text-muted mb-0">Premier medical services tailored for your optimal health and well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center image-col">
+                <div class="doctor-image-wrapper">
+                    <img src="images/doctors/we_love.jpg" alt="Happy Doctor" class="img-fluid doctor-image">
+                    <div class="circle-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="doctors-section py-5" id="doctors">
+    <div class="container text-center py-5">
+        <h2 class="display-6 fw-bold mb-3 doctors-heading">Meet Your Doctor</h2>
+        <p class="lead text-secondary mb-5">
+            BNR Homoeopathy Clinic is experienced in complex Illness treatment.
+        </p>
+
+        <div class="row justify-content-center g-4">
+            
+            <div class="col-lg-12 col-md-12">
+                <div class="doctor-card rounded-3 shadow-sm">
+                    <div class="doctor-image-container mb-3">
+                        <img src="images/doctors/about_doctor.jpg" alt="Dr. Kishor Kumar" class="img-fluid rounded-top">
+                    </div>
+                    <div class="card-body py-4">
+                        
+                        <div class="social-links d-flex justify-content-center">
+                            <a href="https://www.facebook.com/share/17Ct2GyaXa/" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/KishorKanta?t=ZMNuTuC8bD9zYBwl1DTNGA&s=08" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-x"></i></a>
+                            <a href="https://www.instagram.com/bnrhomoeopathy?utm_source=qr&igsh=cThsOG1xMnBqY3Rl" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-instagram"></i></a>
+							<a href="https://youtube.com/@kanta674?si=M2ICYkwIA7CZNFPp" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center"><i class="bi bi-youtube"></i></a>
+
+							</div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+
+        </div>
+    </div>
+</section>
+<!--<section class="welcome-section py-5 position-relative overflow-hidden">
+    <div class="background-pattern"></div> <div class="container py-5 position-relative z-1">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6 col-md-12 text-white text-content pe-lg-5">
+                <h2 class="display-6 fw-bold mb-4 welcome-heading">Welcome to BNR HOMOEOPATHY <br>Clinic</h2>
+                <p class="lead text-white-75 mb-4">
+                    BNR HOMOEOPATHY team is experienced in complex Trauma, Joint Replacement besides routine Trauma management. Proactively revolutionize granular customer service after pandemic internal or "organic" sources proactive human capital rather.
+                </p>
+                <a href="#" class="btn btn-light btn-lg welcome-btn">
+                    Click here <i class="bi bi-chevron-right ms-2"></i>
+                </a>
+            </div>
+            
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center justify-content-lg-end mt-4 mt-lg-0">
+                <div class="welcome-image-wrapper rounded-3 shadow-lg overflow-hidden">
+                    <img src="surgery-welcome.jpg" alt="Surgery in BNR HOMOEOPATHY Clinic" class="img-fluid">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>-->
+<section class="stats-services-section py-5 position-relative overflow-hidden">
+    <div class="background-dots dots-full-size"></div>
+
+    <div class="container py-5">
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10 col-md-12">
+                <div class="stats-card p-5 rounded-3 shadow-lg">
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h3 class="display-4 fw-bold stats-number">3+</h3>
+                            <p class="text-muted stats-label">Years Of Experience</p>
+                        </div>
+                        <div class="col-md-4 mb-4 mb-md-0 border-start border-end border-light-subtle">
+                            <h3 class="display-4 fw-bold stats-number">100+</h3>
+                            <p class="text-muted stats-label">Surgeries</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="display-4 fw-bold stats-number">500+</h3>
+                            <p class="text-muted stats-label">Happy Patients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-4">
+            
+            <div class="col-lg-5 col-md-6">
+                <a href="#" class="service-box service-box-dark d-flex align-items-center p-4 rounded-3 text-decoration-none">
+                    <i class="bi bi-heart-pulse service-box-icon me-4"></i>
+                    <div>
+                        <h4 class="h5 fw-bold mb-1 text-white">Health Services</h4>
+                        <p class="small mb-0 text-white-50">Known the truth for Peace of Mind</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-5 col-md-6">
+                <a href="#" class="service-box service-box-light d-flex align-items-center p-4 rounded-3 text-decoration-none">
+                    <i class="bi bi-capsule service-box-icon me-4"></i>
+                    <div>
+                        <h4 class="h5 fw-bold mb-1 text-white">Professional Consult</h4>
+                        <p class="small mb-0 text-white-50">Medicine Suggestion for diseases</p>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="about-us-section py-5 position-relative" id="about-us">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-6 col-md-12 image-col-about">
+                <div class="about-image-stack position-relative">
+                    <img src="slider_images/1.webp" alt="BNR HOMOEOPATHY Team" class="img-fluid rounded-3 shadow-lg group-doctors-img">
+                    <img src="images/doctors/k1.jpg" alt="Dr. Kishor Kumar" class="img-fluid rounded-3 shadow-lg main-doctor-img">
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-12 text-content-about ps-lg-5">
+                <p class="text-muted small mb-2">BNR HOMOEOPATHY</p>
+                <h2 class="display-8 fw-bold mb-4 about-heading">
+                    One of the leading and Best Homeopathic Doctor in Giridih, Jharkhand
+                </h2>
+                <p class="lead text-secondary mb-5">
+                    Dr. Kishor Kumar, a native of Giridih, Jharkhand, embarked on his journey in medicine with a fervent ambition to become a healer. He pursued his education and earned his BHMS Degree with distinction from GHMCH. He is <span class="fw-bold">best homeopathic doctor in Jharkhand.</span>
+                </p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <i class="bi bi-person-circle about-feature-icon me-3"></i>
+                            <span class="fw-bold">An Individualistic approach</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <i class="bi bi-house-door about-feature-icon me-3"></i>
+                            <span class="fw-bold">Family Environment</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <i class="bi bi-heart-pulse about-feature-icon me-3"></i>
+                            <span class="fw-bold">Lifestyle Management</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <i class="bi bi-patch-check about-feature-icon me-3"></i>
+                            <span class="fw-bold">An Antibiotic free life</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-warning btn-lg about-us-btn">
+                    ABOUT US <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section" id="testimonials">
+    <div class="container">
+        <h2 class="text-center fw-bold testimonial-heading">What Our Patients Say</h2>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card">
+                        <img src="images/tetimonials/kp.jpg" class="testimonial-avatar" alt="Client 1">
+						<p class="testimonial-author">Noise Allergy</p>
+                        <p class="testimonial-quote">"Dr. Kishor Kumar successfully treated my overactive nerves. My noise sensitivity is drastically reduced, bringing comfort back to my daily life. Highly recommend BNR."</p>
+                        
+                        <p class="testimonial-designation">Kailash Pandit</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="images/tetimonials/p3.jpeg" class="testimonial-avatar" alt="Client 2">
+						<p class="testimonial-author">Foot Skin Diseases</p>
+                        <p class="testimonial-quote">"Dr. Kishor Kumar got rid of my stubborn foot fungus/eczema by fixing the cause, not just the rash. My feet are clear and healthy for the first time in years!"</p>
+                        
+                        <p class="testimonial-designation">Dr. Jitendra Kumar</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="images/tetimonials/p3.jpeg" class="testimonial-avatar" alt="Client 3">
+						<p class="testimonial-author">Joint Pain</p>
+                        <p class="testimonial-quote">"My chronic joint pain and stiffness are dramatically better. Dr. Kishor Kumar’s personalized HOMOEOPATHY improved my mobility, letting me finally enjoy an active life again."</p>
+                        
+                        <p class="testimonial-designation">Geeta devi</p>
+                    </div>
+                </div>
+				
+				<div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="images/tetimonials/p3.jpeg" class="testimonial-avatar" alt="Client 3">
+						<p class="testimonial-author">Hand Skin Diseases</p>
+                        <p class="testimonial-quote">"I struggled with hand dermatitis for years. Dr. Kumar treated the root trigger. My hands are now healed, clear, and steroid-free. Excellent, lasting results!"</p>
+                        
+                        <p class="testimonial-designation">Tejnarayan Mahto</p>
+                    </div>
+                </div>
+				
+				<div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="images/tetimonials/p3.jpeg" class="testimonial-avatar" alt="Client 3">
+						<p class="testimonial-author">Kidney Stones</p>
+                        <p class="testimonial-quote">"Dr. Kumar’s Homoeopathy helped me pass my kidney stone (pathari) easily and prevent recurrence. The treatment was gentle and successful. I highly recommend BNR Clinic"</p>
+                        
+                        <p class="testimonial-designation">Mukesh Kumar</p>
+                    </div>
+                </div>
+				
+				<div class="carousel-item">
+                    <div class="testimonial-card">
+                        <img src="images/tetimonials/p3.jpeg" class="testimonial-avatar" alt="Client 3">
+						<p class="testimonial-author">Period Issues</p>
+                        <p class="testimonial-quote">"Dr. Kishor Kumar balanced my hormones naturally. My painful, irregular periods are now smooth and on time, without harsh medications. I feel so much healthier!"</p>
+                        
+                        <p class="testimonial-designation">Roshni Rani</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <h2 class="text-center fw-bold gallery-heading">Our Clinic & Facilities</h2>
+        <p class="text-center text-muted mb-5">A look inside our state-of-the-art Homoeopathy center.</p>
+
+        <div class="row g-4">
+            
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/k1.jpg">
+                    <img src="images/gallery/k1.jpg" class="gallery-img" alt="State-of-the-art Operation Theatre">
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/k2.jpeg">
+                    <img src="images/gallery/k2.jpeg" class="gallery-img" alt="Comfortable Patient Recovery Room">
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/k3.jpg">
+                    <img src="images/gallery/k3.jpg" class="gallery-img" alt="Modern Physiotherapy Unit">
+                </a>
+            </div>
+
+            
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/k5.jpg">
+                    <img src="images/gallery/k5.jpg" class="gallery-img" alt="Digital X-Ray and Imaging Suite">
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/d1.jpg">
+                    <img src="images/gallery/d1.jpg" class="gallery-img" alt="Private Consultation Room">
+                </a>
+            </div>
+			<div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/d2.jpg">
+                    <img src="images/gallery/d2.jpg" class="gallery-img" alt="Private Consultation Room">
+                </a>
+            </div>
+			<div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/d3.jpg">
+                    <img src="images/gallery/d3.jpg" class="gallery-img" alt="Private Consultation Room">
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/d4.jpg">
+                    <img src="images/gallery/d4.jpg" class="gallery-img" alt="Private Consultation Room">
+                </a>
+            </div>
+			<div class="col-6 col-md-4 col-lg-3">
+                <a href="#" class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image-url="images/gallery/d5.jpg">
+                    <img src="images/gallery/d5.jpg" class="gallery-img" alt="Private Consultation Room">
+                </a>
+            </div>
+            </div> 
+		</div> 
+	</section>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" id="modalImage" class="img-fluid" alt="Enlarged gallery image">
+            </div>
+            <div class="modal-footer justify-content-center">
+                <p id="modalCaption" class="mb-0 text-muted"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="contact-section py-5 bg-white" id="contact-us">
+    <div class="container py-5">
+        <div class="row g-5">
+            
+            <div class="col-lg-7">
+                <div class="map-container rounded-3 shadow-sm overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194555.72955030287!2d85.83228170000002!3d24.093442900000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f3f5f60b47d32b%3A0xc5c54aba41c6fd2f!2sChadewa%2C%20Kusmadih%2C%20Jharkhand%20825322!5e1!3m2!1sen!2sin!4v1760943812164!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+            </div>
+            
+            <div class="col-lg-5 ps-lg-5">
+                <div class="contact-details">
+                    
+                    <div class="contact-item d-flex align-items-start mb-5">
+                        <i class="bi bi-house contact-icon me-4"></i>
+                        <div>
+                            <h4 class="h5 fw-bold mb-1">Address</h4>
+                            <p class="text-secondary mb-0">Chadewa, Kashiyadih, Surya, Giridih - 825322 </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item d-flex align-items-start mb-5">
+                        <i class="bi bi-telephone contact-icon me-4"></i>
+                        <div>
+                            <h4 class="h5 fw-bold mb-1">Telephone</h4>
+                            
+                            
+                    <a href="tel:+917004370672" class="text-black text-decoration-none ">+91-7004370672</a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="contact-item d-flex align-items-start mb-0">
+                        <i class="bi bi-envelope contact-icon me-4"></i>
+                        <div>
+                            <h4 class="h5 fw-bold mb-1">Email</h4>
+                            <a href="mailto:bnrhomoeopathy@gmail.com" class="text-black text-decoration-none ">bnrhomoeopathy@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="dream-smile-cta py-4 text-white text-center">
+    <div class="container">
+        <h2 class="h3 fw-bold mb-0">Start making your dream smile a reality!</h2>
+    </div>
+</section>
+
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-5 col-md-12 mb-4">
+                <h5 class="text-uppercase fw-bold mb-3">B.N.R. Homeopathy</h5>
+                <p class="text-white-50 small">
+                    Compassionate, holistic homeopathic care — consultations for chronic and acute concerns.
+                </p>
+                
+                <p class="mb-1">
+                    <span class="fw-bold text-white">Phone:</span> 
+                    <a href="tel:+917004370672" class="text-white text-decoration-none">+91-7004370672</a>
+                </p>
+                <p class="mb-1">
+                    <span class="fw-bold text-white">Email:</span> 
+                    <a href="mailto:bnrhomoeopathy@gmail.com" class="text-white text-decoration-none">bnrhomoeopathy@gmail.com</a>
+                </p>
+                <p class="mb-0">
+                    <span class="fw-bold text-white">Address:</span> Kasiyadih Chadhewa, Giridih, Jharkhand 825322
+                </p><br>
+				<p>
+					<a href="https://www.facebook.com/share/17Ct2GyaXa/" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/KishorKanta?t=ZMNuTuC8bD9zYBwl1DTNGA&s=08" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-x"></i></a>
+                            <a href="https://www.instagram.com/bnrhomoeopathy?utm_source=qr&igsh=cThsOG1xMnBqY3Rl" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center me-2"><i class="bi bi-instagram"></i></a>
+							<a href="https://youtube.com/@kanta674?si=M2ICYkwIA7CZNFPp" class="social-icon rounded-circle d-inline-flex align-items-center justify-content-center"><i class="bi bi-youtube"></i></a>
+
+				</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="text-uppercase fw-bold mb-3">Hours</h5>
+                
+                <dl class="row text-white small">
+                    
+                    <dt class="col-4 fw-normal text-white-75 pt-0 pb-0">Mon–Fri</dt>
+                    <dd class="col-8 text-end pt-0 pb-0" style="color: #ffc107;">
+                        10:00–13:00, 17:00–20:00
+                    </dd>
+                    
+                    <dt class="col-4 fw-normal text-white-75 pt-0 pb-0 border-top border-secondary mt-1">Sat</dt>
+                    <dd class="col-8 text-end pt-0 pb-0 border-top border-secondary mt-1" style="color: #ffc107;">
+                        10:00–14:00
+                    </dd>
+                    
+                    <dt class="col-4 fw-normal text-white-75 pt-0 pb-0 border-top border-secondary mt-1">Sun</dt>
+                    <dd class="col-8 text-end pt-0 pb-0 border-top border-secondary mt-1" style="color: #ffc107;">
+                        Closed
+                    </dd>
+                    
+                </dl>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase fw-bold mb-3">Quick links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#appointment" class="text-decoration-none" style="color: #ffc107;">• Book appointment</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#conditions" class="text-decoration-none" style="color: #ffc107;">• Conditions we see</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#approach" class="text-decoration-none" style="color: #ffc107;">• Our approach</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#faq" class="text-decoration-none" style="color: #ffc107;">• FAQs</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#privacy" class="text-decoration-none" style="color: #ffc107;">• Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+            <div class="col-12 text-center border-top border-secondary pt-3">
+                <p class="small text-white-50 mb-0">&copy; 2025 B.N.R. Homeopathy. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
 </footer>
-<script src="assets/js/main.js"></script>
+
+<div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title" id="comingSoonModalLabel">
+                        Appointment Booking Coming Soon!
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body text-center">
+                    <p class="lead">
+                        Thank you for your interest! Our online appointment system is launching soon.
+                    </p>
+                    <p>
+                        In the meantime, you can reach **BNR HOMOEOPATHY Clinic** and **Dr. Kishor Kumar** directly:
+                    </p>
+                    <hr>
+                    
+                    <h6 class="mt-3">
+                        <i class="fas fa-phone-alt me-2"></i> **Call Us:**
+                    </h6>
+                    <p class="fs-4 text-primary">
+                        <a href="tel:+7004370672" class="text-decoration-none">+91 7004370672</a>
+                    </p>
+
+                    <h6 class="mt-4">
+                        <i class="fas fa-envelope me-2"></i> **Email Us:**
+                    </h6>
+                    <p class="fs-4 text-primary">
+                        <a href="mailto:bnrHomoeopathy@gmail.com" class="text-decoration-none">bnrhomoeopathy@gmail.com</a>
+                    </p>
+                    
+                </div>
+                
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
