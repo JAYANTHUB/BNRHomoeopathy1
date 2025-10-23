@@ -515,6 +515,15 @@ body {
 }
 /* Responsive adjustments for smaller screens (Mobile/Tablet) */
 @media (max-width: 992px) {
+	.container-fluid{
+				width:100%;
+				flex-wrap:none;
+				
+			}
+			.px-5{
+				padding-left:0px;
+				padding-right:0px;
+			}
     .image-collage-container {
         height: auto; /* Allow height to collapse */
         margin-top: 50px;
