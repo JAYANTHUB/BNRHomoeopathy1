@@ -1,43 +1,950 @@
+/* Custom CSS for BNR Homeopathy */
+
+/* --- General & Navbar Styles --- */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f9f4;
-  color: #333;
+    font-family: Arial, sans-serif; /* Use a suitable font */
 }
 
-header {
-  background-color: #2e7d32;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+.custom-navbar {
+    border-bottom: 1px solid #eee; /* Subtle separator */
 }
 
-main {
-  padding: 2rem;
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1rem;
 }
 
-h2 {
-  color: #2e7d32;
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Example hover color */
 }
 
-.contact ul {
-  list-style: none;
-  padding: 0;
+.appointment-btn {
+    border-color: #dc3545; /* Bootstrap danger color for a pop of red */
+    color: #dc3545;
+    transition: all 0.3s ease;
 }
 
-.contact li {
-  margin-bottom: 0.5rem;
+.appointment-btn:hover {
+    background-color: #dc3545;
+    color: white;
 }
 
-a {
-  color: #00695c;
-  text-decoration: none;
+
+.carousel-inner .carousel-item .carousel-caption{
+	color: #efc343;
+}
+/* --- Hero Section Styles --- */
+.hero-section {
+    height: 90vh; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden;
 }
 
-footer {
-  background-color: #e0e0e0;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+.hero-left {
+    background-color: #213045; /* Dark blue color from the image */
+    color: white;
 }
+
+
+.hero-right {
+    /* Define a transition for a smooth visual effect */
+    transition: background-image 0.5s ease-in-out; 
+    
+    /* These properties are crucial for background images */
+    background-size: cover;
+    background-position: center;
+}
+.view-services-btn {
+    border-color: white;
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    border-width: 2px;
+}
+
+.view-services-btn:hover {
+    background-color: white;
+    color: #213045;
+}
+
+/* --- Navigation Arrows (Slider functionality is simulated) --- */
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.arrow-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+/* --- Features/About Section Styles --- */
+.features-section {
+    background-color: #f7f9fc; /* Light background color matching the image */
+}
+
+.ortho-heading {
+    color: #1a2a47; /* Dark blue heading color */
+    line-height: 1.2;
+}
+
+/* Contact Info Styling */
+.phone-icon {
+    font-size: 2.5rem;
+    color: #4a86f7; /* Blue color for the phone icon */
+}
+
+/* Booking Button Styling */
+.booking-btn {
+    background-color: #1a2a47; /* Dark blue button background */
+    border-color: #1a2a47;
+    padding: 0.75rem 2.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.booking-btn:hover {
+    background-color: #2b466c; /* Slightly lighter on hover */
+    border-color: #2b466c;
+}
+
+/* --- Image Collage Styling (The tricky part) --- */
+
+/* Parent container for positioning */
+.image-collage-container {
+    height: 600px; /* Define a fixed height for the collage area on large screens */
+    padding: 0;
+}
+
+/* Base image wrapper (Doctor at Desk) - positioned slightly off-center */
+.main-image-wrapper {
+    position: absolute;
+    top: 50px;
+    left: 45%; /* Start position */
+    transform: translateX(-50%);
+    width: 45%;
+    max-width: 400px; /* Control max size */
+    z-index: 10;
+}
+
+.main-image {
+    border-radius: 15px !important;
+}
+
+/* General overlay image styling for stacking */
+.overlay-image {
+    position: absolute;
+    z-index: 20;
+    overflow: hidden; /* Important for the circular image shapes */
+}
+
+/* Top Right Small Image */
+.top-right-image {
+    top: 0;
+    right: 15%;
+    width: 25%;
+    max-width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Circular mask */
+    background-color: white; /* Fallback */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.top-right-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bottom Large Image (Operating Room) */
+.bottom-center-image {
+    bottom: 50px;
+    left: 55%; /* Position relative to the main image */
+    transform: translateX(-50%);
+    width: 45%;
+    max-width: 350px;
+    height: 380px; /* Control height for the shape */
+    border-radius: 50% / 60% 60% 40% 40%; /* Custom blob shape (Adjust percentages for effect) */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #1a2a47; /* Fallback/background for the blue overlay */
+}
+.bottom-center-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit; /* Inherit the blob shape */
+}
+
+/* Play Button Overlay (Dark Blue Circle) */
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: rgba(26, 42, 71, 0.8); /* Semi-transparent dark blue */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.play-button-overlay i {
+    font-size: 2rem;
+    color: white;
+}
+/*doctor section start*/
+
+/* --- Meet Our Doctors Section --- */
+.doctors-section {
+    background-color: #f7f9fc; /* Light background similar to the image */
+    /* If you want the subtle white background elements, you'd add background-image and properties here */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Doctors section specific heading */
+.doctors-heading {
+    color: #1a2a47; /* Dark blue heading */
+}
+
+/* Doctor Card Styling */
+.doctor-card {
+    background-color: white;
+    border: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Make cards equal height */
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container for consistent sizing */
+.doctor-image-container {
+    width: 100%;
+    height: 600px; /* Fixed height for doctor images */
+    overflow: hidden;
+    position: relative;
+    /* Ensure only top corners are rounded */
+    border-top-left-radius: 0.25rem; /* Bootstrap's default rounded-top */
+    border-top-right-radius: 0.25rem;
+}
+
+.doctor-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    object-position: top center; /* Focus on the top part of the person */
+    display: block;
+}
+
+/* Card body padding and text color */
+.doctor-card .card-body {
+    flex-grow: 1; /* Allows body to take remaining space for equal height */
+    padding-bottom: 2rem; /* More space at bottom */
+}
+
+/* Social Icon Styling */
+.social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    color: #888; /* Grey for inactive */
+    background-color: #f0f0f0; /* Light grey background */
+    transition: all 0.3s ease;
+}
+.social-media{
+	
+	padding:5px;
+}
+.social-media .social-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    color: red; /* Grey for inactive */
+    background-color: black; /* Light grey background */
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    color: white;
+    background-color: #4a86f7; /* Blue on hover */
+}
+
+/* --- Optional: Background pattern from the image --- */
+/* This is an attempt to replicate the subtle background element */
+.doctors-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('subtle-ortho-bg.png'); /* Replace with a subtle background image if you have one */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Very subtle */
+    z-index: 0;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+.doctors-section .container {
+    position: relative; /* Ensure content is above the background effect */
+    z-index: 1;
+}
+/*ende doctor section*/
+
+/* welcome section start */
+
+/* --- Welcome to Akriti Clinic Section --- */
+.welcome-section {
+    background-color: #213045; /* Dark blue background */
+    position: relative;
+    overflow: hidden;
+	height: 550px;
+}
+
+/* Hexagonal background pattern */
+.welcome-section .background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Replace with your hexagonal pattern image */
+    background-image: url('hex-pattern.png'); /* You'll need a hexagonal pattern image */
+    background-size: 200px; /* Adjust size of pattern repeats */
+    background-repeat: repeat;
+    opacity: 0.1; /* Very subtle */
+    z-index: 0;
+    pointer-events: none; /* Allows content behind it to be interactive */
+}
+
+/* Ensure content is above the pattern */
+.welcome-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-heading {
+    color: white; /* White heading */
+}
+
+/* Adjust text color for better readability on dark background */
+.welcome-section .text-white-75 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Welcome Button Styling */
+.welcome-btn {
+    background-color: white;
+    color: #213045; /* Dark blue text */
+    border-color: white;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.welcome-btn:hover {
+    background-color: #f0f0f0; /* Slightly grey on hover */
+    color: #1a2a47; /* Slightly darker blue text */
+    border-color: #f0f0f0;
+}
+
+/* Image Wrapper for the Surgery Image */
+.welcome-image-wrapper {
+    max-width: 600px; /* Control max width of the image */
+    height: 350px; /* Fixed height for consistency */
+}
+
+.welcome-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the area */
+    object-position: center;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .welcome-section .text-content {
+        text-align: center; /* Center text on smaller screens */
+        padding-right: 15px !important; /* Reset padding */
+        padding-left: 15px !important; /* Reset padding */
+    }
+    .welcome-section .btn {
+        margin: 0 auto; /* Center button */
+        display: block;
+        width: fit-content;
+    }
+    .welcome-image-wrapper {
+        max-width: 100%; /* Full width on small screens */
+        height: 250px; /* Adjust height */
+        margin: 0 auto; /* Center image */
+    }
+}
+
+/* end welcome section */
+
+/* --- Stats and Services Section --- */
+.stats-services-section {
+    background-color: #ffffff; /* White background for the section */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background dots for the whole section (similar to the "We love your loved ones" section) */
+.stats-services-section .dots-full-size {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #e0f2fe 1px, transparent 1px); /* Light blue dots */
+    background-size: 30px 30px; /* Wider spacing */
+    opacity: 0.8;
+    z-index: 0; /* Keep behind content */
+}
+
+/* Main Statistics Card */
+.stats-card {
+    background-color: white;
+    position: relative;
+    z-index: 5; /* Ensure it sits above the dot pattern */
+}
+
+.stats-number {
+    color: #1a2a47; /* Dark blue number color */
+    font-weight: 700;
+}
+
+.stats-label {
+    color: #6c757d; /* Standard muted text */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Vertical separator line between stats */
+.stats-card .border-light-subtle {
+    border-color: #e0f2fe !important; /* Light blue border color */
+    border-width: 1px !important;
+}
+
+
+/* --- Service Box Styling --- */
+.service-box {
+    padding: 1.5rem 2rem !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-box-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+/* Dark Blue Box */
+.service-box-dark {
+    background-color: #314467; /* Dark blue color */
+    color: #ffffff;
+}
+
+.service-box-dark .service-box-icon {
+    color: #a4c8ff; /* Lighter blue icon color */
+}
+
+/* Bright Blue Box */
+.service-box-light {
+    background-color: #4a86f7; /* Bright blue color */
+    color: #ffffff;
+}
+
+.service-box-light .service-box-icon {
+    color: #ffffff; /* White icon color */
+}
+
+
+/* Responsive adjustments for the stats card border on mobile */
+@media (max-width: 767.98px) {
+    .stats-card .border-start,
+    .stats-card .border-end {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: 1px solid #e0f2fe !important; /* Add horizontal separator */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .stats-card .col-md-4:last-child {
+        border-top: none !important; /* Remove separator above the last item */
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .doctors-bg-image {
+        height: 150px; /* Reduce height on mobile */
+        margin-top: -20px;
+    }
+}
+/* Responsive adjustments for smaller screens (Mobile/Tablet) */
+@media (max-width: 992px) {
+    .image-collage-container {
+        height: auto; /* Allow height to collapse */
+        margin-top: 50px;
+    }
+    .main-image-wrapper, .overlay-image {
+        position: static; /* Remove absolute positioning */
+        transform: none;
+        width: 90%; /* Use full width for clarity */
+        max-width: none;
+        margin: 10px auto;
+        border-radius: 15px !important;
+    }
+    .top-right-image, .bottom-center-image {
+        /* Collapse shapes to simple rectangles on mobile */
+        border-radius: 15px; 
+        height: auto;
+    }
+    .play-button-overlay {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* On desktop view, adjust arrows to be mostly on the dark blue side, but still visible */
+@media (min-width: 992px) {
+    .left-arrow {
+        left: calc(50% - 60px); /* Moves it slightly onto the dark blue side */
+    }
+    .right-arrow {
+        right: 20px; /* Stays on the image side */
+    }
+}
+
+/* start testimonial section*/
+.testimonial-section {
+            background-color: #f8f9fa; /* Light background for the section */
+            padding: 80px 0;
+        }
+
+        .testimonial-heading {
+            color: #343a40; /* Darker text for heading */
+            margin-bottom: 60px;
+        }
+
+        /* Custom styling for the testimonial card */
+        .testimonial-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 700px; /* Constrain width for better readability */
+            margin: auto; /* Center the card */
+            position: relative;
+            min-height: 320px; /* Ensure cards have consistent height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonial-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #0d6efd; /* Bootstrap blue border */
+        }
+
+        .testimonial-quote {
+            font-size: 1.25em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 2px;
+        }
+
+        .testimonial-designation {
+            color: #777;
+            font-size: 0.95em;
+        }
+
+        /* Carousel Customizations */
+        .carousel-indicators [data-bs-target] {
+            background-color: #0d6efd; /* Blue indicators */
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 7px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        .carousel-indicators .active {
+            opacity: 1;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.4); /* Darker background for arrows */
+            border-radius: 50%;
+            padding: 15px; /* Increase size of the arrow background */
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%; /* Less width so content is more visible */
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            opacity: 1;
+        }
+
+        /* Optional: Add a quote icon for flair */
+        .testimonial-quote::before {
+            content: "\201C"; /* Left double quotation mark */
+            font-family: Georgia, serif;
+            font-size: 3em;
+            color: #cccccc;
+            line-height: 0;
+            vertical-align: -0.4em;
+            margin-right: 5px;
+            display: inline-block;
+        }
+        .testimonial-quote::after {
+            content: "\201D"; /* Right double quotation mark */
+            font-family: Georgia, serif;
+            font-size: 3em;
+            color: #cccccc;
+            line-height: 0;
+            vertical-align: -0.4em;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                padding: 30px;
+                min-height: 300px; /* Adjust height for smaller screens */
+            }
+            .testimonial-quote {
+                font-size: 1.1em;
+            }
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none; /* Hide arrows on small screens, rely on swipe */
+            }
+        }
+		
+		/* end testimonial*/
+		
+		/* start photo gallery section */
+		
+		.gallery-section {
+            padding: 80px 0;
+            background-color: #ffffff; /* White background */
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-img {
+            width: 100%;
+            height: 250px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+            vertical-align: middle;
+        }
+        .gallery-heading {
+            color: #0b2241; /* Dark blue from your hero section */
+            margin-bottom: 50px;
+        }
+
+        /* Modal Customization */
+        .modal-body {
+            padding: 0; /* Remove padding for the image */
+        }
+        .modal-content {
+            border-radius: 0.5rem;
+        }
+		
+		/* end photo gallery section */
+		
+		/*start contact */
+		
+		/* --- Contact Section --- */
+.contact-section {
+    background-color: #ffffff;
+}
+
+/* Map Container Styling */
+.map-container {
+    width: 95%;
+    /* Set a specific height for the map area to match the visual weight of the reference image */
+    height: 350px; 
+    border: 1px solid #e0f2fe; /* Subtle border */
+}
+
+/* Contact Icon Styling */
+.contact-icon {
+    font-size: 2.5rem; /* Large icon size */
+    color: #4a86f7; /* Blue color for the icons */
+    line-height: 1; /* Ensures vertical alignment */
+    /* Add a background shape to the icon if desired, like the image */
+    background-color: #ffffff; /* White background to mimic the floating look */
+    /* If you want a circle or box behind the icon, adjust here: */
+    /* padding: 10px; 
+    border-radius: 50%; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05); */
+}
+
+/* Contact text styling to match the image */
+.contact-details h4 {
+    color: #1a2a47; /* Dark blue for titles */
+    font-weight: 700;
+}
+.contact-details p {
+    color: #6c757d; /* Muted text for details */
+}
+
+/* Responsive adjustments for map height */
+@media (max-width: 991.98px) {
+    .map-container {
+        height: 400px; /* Reduce height on tablets/smaller screens */
+    }
+}
+@media (max-width: 575.98px) {
+    .map-container {
+        height: 300px; /* Further reduce height on mobile */
+    }
+}
+
+/*end contact section */
+/*start bottom section*/
+/* --- Dream Smile Call-to-Action Section --- */
+.dream-smile-cta {
+    background-color: #28a745; /* Green color from the image */
+    color: white;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* --- Main Footer Section --- */
+.main-footer {
+    background-color: #e0f2fe; /* Light blue/greenish background from image */
+    color: #1a2a47; /* Default text color for the footer */
+}
+
+.footer-heading {
+    color: #1a2a47; /* Dark blue for footer headings */
+    position: relative;
+    padding-bottom: 8px; /* Space for underline */
+    font-size: 1.25rem; /* H5 size */
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px; /* Length of the underline */
+    height: 2px;
+    background-color: #4a86f7; /* Blue underline color */
+}
+
+.footer-links li a {
+    color: #6c757d !important; /* Muted text for links */
+    line-height: 1.8;
+}
+
+.footer-links li a:hover {
+    color: #4a86f7 !important; /* Blue on hover */
+}
+
+/* App Store Badges */
+.store-badges img {
+    height: 40px; /* Adjust height as needed */
+    object-fit: contain;
+}
+
+/* --- Copyright Bar --- */
+.copyright-bar {
+    background-color: #313d54; /* Dark blue background from the image */
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.copyright-bar a {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.copyright-bar a:hover {
+    color: white !important;
+}
+
+/*end bottom section*/
+
+/* --- About Us Section --- */
+.about-us-section {
+    background-color: #ffffff; /* White background */
+}
+
+.about-heading {
+    color: #1a2a47; /* Dark blue heading */
+    line-height: 1.2;
+}
+
+/* --- Image Stacking (Left Column) --- */
+.image-col-about {
+    min-height: 600px; /* Ensure enough space for stacked images on desktop */
+    display: flex; /* For centering content vertically if needed */
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-stack {
+    width: 100%;
+    max-width: 550px; /* Max width for the entire image stack */
+}
+
+.group-doctors-img {
+    position: absolute; /* Stack over each other */
+    top: 0;
+    left: 0;
+    width: 80%; /* Smaller group image */
+    max-width: 400px;
+    z-index: 2; /* On top of the background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.main-doctor-img {
+    position: absolute; /* Stack over each other */
+    bottom: -50px; /* Adjust vertical position */
+    right: 0;
+    width: 65%; /* Larger main doctor image */
+    max-width: 350px;
+    z-index: 3; /* On top of the group image */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* About Feature Icons */
+.about-feature-icon {
+    font-size: 1.5rem;
+    color: #4a86f7; /* Blue color for icons */
+    line-height: 1;
+    background-color: #e0f2fe; /* Light blue background for the icon */
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Us Button */
+.about-us-btn {
+    background-color: #f7931e; /* Orange color from the image */
+    border-color: #f7931e;
+    color: white;
+    padding: 0.75rem 2.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.about-us-btn:hover {
+    background-color: #e68010; /* Slightly darker orange on hover */
+    border-color: #e68010;
+}
+
+
+/* Responsive adjustments for image stacking on smaller screens */
+@media (max-width: 991.98px) {
+    .image-col-about {
+        min-height: auto; /* Remove fixed height */
+        margin-bottom: 50px;
+    }
+    .about-image-stack {
+        position: relative;
+        width: 100%; /* Allow stack to fill column */
+        height: 400px; /* Fixed height for the stack on mobile */
+        max-width: none;
+    }
+    .group-doctors-img {
+        position: static; /* Reset positioning */
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
+        display: block;
+    }
+    .main-doctor-img {
+        position: absolute;
+        bottom: -30px; /* Adjust for mobile */
+        right: 5%;
+        width: 60%;
+        max-width: 250px;
+        transform: translateY(0);
+    }
+    .text-content-about {
+        padding-left: 15px !important; /* Reset padding */
+        padding-right: 15px !important; /* Reset padding */
+        text-align: center; /* Center text on mobile */
+    }
+    .about-feature {
+        justify-content: center; /* Center feature icons/text */
+    }
+    .about-us-btn {
+        margin: 0 auto; /* Center button */
+        display: block;
+        width: fit-content;
+    }
+}
+
+.modal-header {
+            background-color: #007bff; /* Blue header */
+            color: white;
+            border-bottom: none;
+        }
+        .modal-content {
+            border-radius: 10px;
+        }
