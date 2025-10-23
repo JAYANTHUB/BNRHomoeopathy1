@@ -515,17 +515,26 @@ body {
         height: 150px; /* Reduce height on mobile */
         margin-top: -20px;
     }
+    .container-fluid{
+				width:100%;
+				flex-wrap:initial;
+				
+			}
+    .px-5{
+				padding-left:1rem !important;
+				padding-right:1rem !important;
+			}
 }
 /* Responsive adjustments for smaller screens (Mobile/Tablet) */
 @media (max-width: 992px) {
 	.container-fluid{
 				width:100%;
-				flex-wrap:none;
+				flex-wrap:initial;
 				
 			}
 			.px-5{
-				padding-left:0px;
-				padding-right:0px;
+				padding-left:1rem !important;
+				padding-right:1rem !important;
 			}
     .carousel-inner .carousel-item img{
         width:100%;
