@@ -4,11 +4,11 @@
 body {
     font-family: Arial, sans-serif; /* Use a suitable font */
 }
-.navbar-brand .text-dark{
-    color:#d7c788;
+.navbar-brand .fw-bold{
+    color:#fade6d;
 }
 .dream-smile-cta{
-    background-color:#d7c788;
+    background-color:#fade6d;
 }
 .custom-navbar {
     border-bottom: 1px solid #eee; /* Subtle separator */
@@ -40,7 +40,7 @@ body {
 }
 
 .carousel-inner .carousel-item .carousel-caption{
-	color: #d7c788;
+	color: #fade6d;
 }
 /* --- Hero Section Styles --- */
 .hero-section {
