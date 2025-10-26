@@ -4,7 +4,12 @@
 body {
     font-family: Arial, sans-serif; /* Use a suitable font */
 }
-
+.navbar-brand .text-dark{
+    color:#d7c788;
+}
+.dream-smile-cta{
+    color:#d7c788;
+}
 .custom-navbar {
     border-bottom: 1px solid #eee; /* Subtle separator */
 }
@@ -35,7 +40,7 @@ body {
 }
 
 .carousel-inner .carousel-item .carousel-caption{
-	color: #f3b03a;
+	color: #d7c788;
 }
 /* --- Hero Section Styles --- */
 .hero-section {
@@ -561,7 +566,7 @@ body {
         height:250px;
     }
     .carousel-inner .carousel-item .carousel-caption{
-	color: #ee1b96;
+	
     font-size:75%;
 }
     .image-collage-container {
