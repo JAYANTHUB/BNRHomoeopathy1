@@ -4,11 +4,9 @@
 body {
     font-family: Arial, sans-serif; /* Use a suitable font */
 }
-.navbar-brand .fw-bold{
-    color:#fade6d;
-}
-.dream-smile-cta{
-    background-color:#fade6d;
+
+.navbar-brand:focus, .navbar-brand:hover{
+ color:#fade6d;
 }
 .custom-navbar {
     border-bottom: 1px solid #eee; /* Subtle separator */
@@ -820,7 +818,7 @@ body {
 /*start bottom section*/
 /* --- Dream Smile Call-to-Action Section --- */
 .dream-smile-cta {
-    background-color: #28a745; /* Green color from the image */
+    background-color: #fade6d; /* Green color from the image */
     color: white;
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
